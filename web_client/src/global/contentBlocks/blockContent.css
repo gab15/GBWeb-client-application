@@ -1,0 +1,56 @@
+.content-block-header {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  line-height: 50px;
+
+  background-color: darkslategray;
+}
+
+.content-topics-links-bin {
+  padding: 0;
+  height: 200px;
+  border: 1px solid darkslategray;
+  
+  overflow: auto;
+}
+
+.content-block {
+  height: 250px;
+  width: 250px;
+
+  color: white;
+  margin-bottom: 2.5%;
+
+  scroll-behavior: smooth;
+}
+
+.content-topics-link {
+  display: block;
+
+  text-align: center;
+  list-style: none;
+
+  border-top: 1px solid lightgray;
+  color: #6d6d6d;
+  font-size: 95%;
+
+  transition: 0.5s;
+  background-color: whitesmoke;
+}
+
+.content-topics-link:hover {
+  transition: 0.5s;
+  background-color: lightgray;
+}
+
+.content-topics-link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+@media(max-width: 768px) {
+  .content-block {
+    width: 100%;
+  }
+}

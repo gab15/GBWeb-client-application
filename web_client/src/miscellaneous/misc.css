@@ -1,0 +1,15 @@
+.home-block {
+  --homeHeight: 50px;
+  --homeWidth: 50px;
+  height: var(--homeHeight);
+  width: var(--homeWidth);
+  border: 1px solid green;
+
+  font-size: calc((var(--homeHeight) + var(--homeWidth))/50);
+
+  /* Stumbed across this and thought it was cool.  Seems like
+     a project surrounding the old "optimization" math problems
+     might be a good fit for this.  i.e., we have a fence (border)
+     and we are trying to fit as much text in there as possible,
+     and the text can be shrunk. */
+}

@@ -1,0 +1,52 @@
+.top-header {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  line-height: 64px;
+
+  font-size: calc(35px + .5vw);
+}
+
+.top-nav {
+  box-sizing: border-box; /* Deals with margin spillover caused by width set to 100% */
+  width: 100%; /* Maintains list spacing for flexbox */
+
+  background-color: white;
+  border-bottom: 1px solid transparent;
+  
+  height: 28px;
+}
+
+.top-nav-stick-on-scoll {
+  top: 0;
+  position: fixed;
+  
+  border-bottom: 1px solid lightgrey;
+
+  opacity: 0.9;
+}
+
+.header-list {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  
+  width: 100%;
+  list-style-type: none;
+
+  line-height: 24px;
+  font-size: 70%;
+}
+
+.header-list-link {
+  text-decoration: none;
+  color: #6d6d6d;
+  transition: 0.5s;
+}
+
+.header-list-link:hover {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}

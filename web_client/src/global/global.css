@@ -1,0 +1,168 @@
+@import url("//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css");
+
+:root {
+  --regularGray: #f3f3f3;
+  --darkerGray: #6d6d6d;
+  --darkRed: #d33a2c;
+  --darkGreen: #007000;
+}
+
+.tableMargins {
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+}
+
+.katex {
+  font-size: 0.7em !important;
+  font-weight: normal;
+  color: var(--darkRed);
+}
+
+* {
+  font-family: Calibri;
+  font-size: 104%;
+  font-weight: 300;
+  z-index: 999; /* site content appears at top level unless otherwise specified */
+  margin: 0;
+  list-style: none;
+}
+
+.blogCodeBlock {
+  font-family: 'Courier';
+  max-width: inherit;
+  overflow: auto;
+  background-color: var(--regularGray);
+  font-size: 20px;
+  border-radius: 5px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 2.5%;
+  margin-bottom: 2.5%;
+}
+
+.blogInlineCodeBlock {
+  font-family: 'Courier';
+  background-color: var(--regularGray);
+  font-size: 20px;
+  border-radius: 5px;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+}
+
+.compiledCodeBlock {
+  border-left: 5px solid var(--darkGreen);
+}
+
+.errorCodeBlock {
+  border-left: 5px solid var(--darkRed);
+}
+
+.blogContent {
+  display: block;
+
+  padding-top: 125px;
+  padding-bottom: 2.5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  z-index: 0; /* blog content appears under everything, plays nice with the headers */
+}
+
+.blogTogglesBin {
+  display: flex;
+  padding-bottom: 2.5%;
+}
+
+.blogToggles {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2.5%;
+  width: 100%;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.blogToggle {
+  width: 200px;
+  margin-left: 2.5%;
+  font-size: 90%;
+}
+
+.blogToggleText {
+  cursor: pointer;  
+  color: var(--darkerGray) !important;
+  transition: 0.5s;
+}
+
+.blogToggleText:hover {
+  color: black !important;
+  transition: 0.5s;
+}
+
+.blogTogglesHeader {
+  width: 200px;
+  border-right: 2.5px solid darkgray;
+}
+
+.blogToggleDecoration {
+  color: var(--darkerGray);
+  min-width: 120px;
+}
+
+.blogHeader {
+  text-align: center;
+  padding-bottom: 2.5%;
+}
+
+.blogSpacing {
+  padding-bottom: 2.5%;
+}
+
+.blogPictureDiv {
+  /* aim for 2100wx1400h */
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.blogPictureImg {
+  /* aim for 2100wx1400h */
+  --minHeight: 150px;
+  min-height: var(--minHeight);
+  min-width: calc(var(--minHeight) * 1.85);
+  width: 50%;
+
+  max-height: 300px;
+  max-width: 450px;
+}
+
+.codeBlockToggleContainer {
+  display: inline-flex;
+  width: 99.75%;
+  margin-left: 0.25%;
+  font-size: 14px;
+}
+
+.codeBlockToggleBar {
+  border-right: 1px solid darkgray;
+  padding-left: 1%;
+  padding-right: 1%;
+  text-align: center;
+  line-height: 15px;
+}
+
+.codeBlockToggleText {
+  cursor: pointer;  
+  color: darkgray !important;
+  transition: 0.5s;
+}
+
+.codeBlockToggleTextClicked {
+  color: black !important;
+}

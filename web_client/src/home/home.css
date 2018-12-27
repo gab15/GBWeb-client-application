@@ -1,0 +1,14 @@
+.home-content-blocks {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5%;
+}
+
+
+@media(max-width: 768px) {
+  .home-content-blocks {
+    display: block;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
